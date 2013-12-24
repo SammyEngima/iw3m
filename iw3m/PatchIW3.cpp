@@ -35,8 +35,8 @@ void PatchIW3_Misc()
 	*(DWORD*)0x5434BC = (DWORD)"IW3M r1";
 
 	// console '%s: %s> ' string
-	//*(DWORD*)0x5A44B4 = (DWORD)(VERSIONSTRING "> ");
+	*(DWORD*)0x46060F = (DWORD)(VERSIONSTRING "> ");
 
 	// version string
-	//*(DWORD*)0x4FF1E0 = (DWORD)(VERSIONSTRING " (built " __DATE__ " " __TIME__ ")\n");
+	*(DWORD*)0x461B84 = (DWORD)(VERSIONSTRING " (built " __DATE__ " " __TIME__ ")\n");
 }
